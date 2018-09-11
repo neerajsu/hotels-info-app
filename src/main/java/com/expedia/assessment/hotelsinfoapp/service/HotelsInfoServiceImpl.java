@@ -38,7 +38,8 @@ public class HotelsInfoServiceImpl implements HotelsInfoService {
 		List<Hotel> hotels = new ArrayList<>();
 		Optional<HotelsAtLocation> hotelsAtLocationOptional = null;
 		try {
-			hotelsAtLocationOptional = locationsWithHotelsDataLoader.getAllHotelsForALocation(locationId);
+			hotelsAtLocationOptional = this.locationsWithHotelsDataLoader.loadAndGetLocationsAndTheirHotels().stream()
+					.filter(hotelsAtLocation -> hotelsAtLocation.getLocation_id() == locationId).findAny();;
 		} catch (IOException e) {
 			throw new ServiceException("Exception Occured while trying to load data from json", e);
 		}
