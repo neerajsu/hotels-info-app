@@ -19,7 +19,7 @@ git clone -b master https://github.com/neerajsu/hotels-info-app
 
 There is also a library jar that must be imported into your local maven repository. You can generate the jar by exporting the project from [Sorting Library repo](https://github.com/neerajsu/SortingLibrary). For more information about this, please visit the GitHub link.
 
-If you wish to skip that step, you can also directly download the jar from here.
+If you wish to skip that step, you can also directly download the generated jar from project [here](https://github.com/neerajsu/FileRepository/blob/master/sorting-library.jar).
 
 ##### Importing sorting-library jar into your maven repository
 
