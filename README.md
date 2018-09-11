@@ -50,6 +50,8 @@ Once the application is up and running you can test it by sending a GET request 
 Following is a a sample requests and its explanation
 
 	1. http://localhost:8080/location/1/hotels?sort_by=RATING&is_ascending=true 
-    2. This will get all hotels near location with location_id = 1, sorted by RATING              field, in ascending order
+    	2. This will get all hotels near location with location_id = 1, sorted by RATING field, in ascending order
 	3. location_id is an integer
-	4. sort_by request parameter can be either RATING, DISTANCE, NAME or PRICE. is_ascending can be true or false. If true, the hotels are sorted in ascending order based on the sort_by paramter. If false, hotels result is sorted in descending  order.
+	4. sort_by request parameter can be either RATING, DISTANCE, NAME or PRICE. is_ascending can be true or false.
+	If true, the hotels are sorted in ascending order based on the sort_by paramter.
+	If false, hotels result is sorted in descending  order.
