@@ -32,14 +32,14 @@ public class HotelsInfoController {
 	@Autowired
 	HotelsInfoService hotelsInfoService;
 
-	private static final String DOC_URL = "http://documentation-url";
+	private static final String DOC_URL = "https://github.com/neerajsu/hotels-info-app";
 
 	private static final Logger LOG = LogManager.getLogger(HotelsInfoController.class.getName());
-	
+
 	@GetMapping(value = "/ping")
-    public String checkResourceHealth() {
-        return "Application is up and running";
-    }
+	public String checkResourceHealth() {
+		return "Application is up and running";
+	}
 
 	@RequestMapping(method = RequestMethod.GET, path = "/{locationId}/hotels", params = { "sort_by", "is_ascending" })
 	public List<Hotel> getHotelsInfo(@PathVariable("locationId") int locationId,
